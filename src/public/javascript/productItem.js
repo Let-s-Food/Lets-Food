@@ -36,7 +36,6 @@ const formatPrice = price => {
 fetch('https://letsfood.click/product/get')
    .then(response => response.json())
    .then(data => {
-
       // hiện thị sản phẩm còn lại
       data.forEach(item => {
          sliderProduct.innerHTML += `
@@ -52,5 +51,5 @@ fetch('https://letsfood.click/product/get')
                   </div>
             </a>
          `;
+      });
    });
-});

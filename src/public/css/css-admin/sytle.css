@@ -89,15 +89,14 @@ a {
 
 .root {
    width: 100vw;
-   height: 100vh;
+   height: 100%;
    display: flex;
-   align-items: center;
 }
 
 .navbar {
    background-color: var(--background-color);
    width: 20vw;
-   height: 100vh;
+   height: auto;
 }
 
 .logo {
@@ -126,7 +125,6 @@ a {
 .container {
    background-color: var(--orange-color);
    width: 80vw;
-   height: 100vh;
 }
 
 .home {
@@ -417,4 +415,127 @@ a {
    outline: none;
    border: none;
    cursor: pointer;
+}
+
+.best__sell {
+   padding: 20px;
+}
+
+.best__sell-title {
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: var(--black-color);
+   margin-bottom: 20px;
+}
+
+.best__sell-table-header {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   border-bottom: 1px solid var(--black-color);
+   padding: 10px 0;
+}
+
+.best__sell-table-index,
+.best__sell-table-name,
+.best__sell-table-img,
+.best__sell-table-count,
+.best__sell-table-money {
+   width: 20%;
+   text-align: center;
+   font-size: 1.2rem;
+   font-weight: 700;
+   color: var(--black-color);
+}
+
+.best__sell-table-item {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   border-bottom: 1px solid var(--black-color);
+   padding: 10px 0;
+}
+
+.best__sell-table-item .index,
+.best__sell-table-item .name,
+.best__sell-table-item .img,
+.best__sell-table-item .count,
+.best__sell-table-item .money {
+   width: 20%;
+   text-align: center;
+   font-size: 1.2rem;
+   font-weight: 700;
+   color: var(--black-color);
+}
+
+.img__best-sell{
+   width: 100px;
+   height: 100px;
+   object-fit: cover;
+   border-radius: 5px;
+   margin: 0 auto;
+}
+
+.member {
+   padding: 20px;
+}
+
+.member-title {
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: var(--black-color);
+   margin-bottom: 20px;
+}
+
+.member-table-header {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   border-bottom: 1px solid var(--black-color);
+   padding: 10px 0;
+}
+
+.member-table-index,
+.member-table-name,
+.member-table-img,
+.member-table-count,
+.member-table-money {
+   width: 20%;
+   text-align: center;
+   font-size: 1.2rem;
+   font-weight: 700;
+   color: var(--black-color);
+}
+
+.member-table-item {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   border-bottom: 1px solid var(--black-color);
+   padding: 10px 0;
+}
+
+.member-table-item .index,
+.member-table-item .name,
+.member-table-item .img,
+.member-table-item .address,
+.member-table-item .phone {
+   width: 20%;
+   text-align: center;
+   font-size: 1.2rem;
+   font-weight: 700;
+   color: var(--black-color);
+}
+
+.img__member{
+   width: 100px;
+   height: 100px;
+   object-fit: cover;
+   border-radius: 5px;
+   margin: 0 auto;
+}
+
+.member-table-content {
+   max-height: 500px;
+   overflow-y: auto;
 }

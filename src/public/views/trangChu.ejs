@@ -143,15 +143,21 @@
 
                      <div class="account__container">
                         <ul class="account__list">
-
                            <% if(role === 'admin') { %>
-                              <li class="account__item">
+                           <li class="account__item">
                               <a href="/product/getAllProduct" class="account__link">
                                  <i class="fas fa-user-cog"></i>
                                  <span>Trang quản lý</span>
                               </a>
                            </li>
                            <% } %>
+
+                           <li class="account__item">
+                              <a href="/order/show/<%= user._id %>" class="account__link">
+                                 <i class="fas fa-shopping-bag"></i>
+                                 <span>Đơn hàng</span>
+                              </a>
+                           </li>
 
                            <li class="account__item">
                               <a href="/user/show/<%= user._id %>" class="account__link">
@@ -462,6 +468,39 @@
          <img src="../images/Ellipse 4.png" alt="" class="footer__decor__3" />
       </footer>
       <!-- FOOTER -->
+
+      <!-- Messenger Plugin -->
+      <!-- Messenger Plugin chat Code -->
+      <div id="fb-root"></div>
+
+      <!-- Your Plugin chat code -->
+      <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+      <script>
+         var chatbox = document.getElementById('fb-customer-chat');
+         chatbox.setAttribute('page_id', '108847372047815');
+         chatbox.setAttribute('attribution', 'biz_inbox');
+      </script>
+
+      <!-- Your SDK code -->
+      <script>
+         window.fbAsyncInit = function () {
+            FB.init({
+               xfbml: true,
+               version: 'v15.0',
+            });
+         };
+
+         (function (d, s, id) {
+            var js,
+               fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+         })(document, 'script', 'facebook-jssdk');
+      </script>
 
       <!-- javascript -->
 
